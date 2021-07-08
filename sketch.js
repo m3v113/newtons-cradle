@@ -4,6 +4,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
+const Render = Matter.Render;
 
 var roof;
 var bob1, bob2, bob3, bob4, bob5;
@@ -38,8 +39,6 @@ function setup() {
 
 	//Engine.run(engine);
   
-}
-
 	var render = Render.create({
 	  element: document.body,
 	  engine: engine,
@@ -49,7 +48,7 @@ function setup() {
 	    wireframes: false
 	  }
 	});
-
+}
 
 function draw() {
   //rectMode(CENTER);
